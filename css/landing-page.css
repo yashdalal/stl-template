@@ -1,0 +1,847 @@
+/*!
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+@font-face {
+    font-family: Arcon;
+    src: url(../fonts/arcon/Arcon-Regular.otf);
+}
+
+@font-face {
+    font-family: Jubilat;
+    src: url(../fonts/jubilat/jubilat-regular-webfont.eot);
+    src: url(../fonts/jubilat/jubilat-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/jubilat/jubilat-regular-webfont.woff) format('woff'),
+         url(../fonts/jubilat/jubilat-regular-webfont.ttf) format('truetype'),
+         url(../fonts/jubilat/jubilat-regular-webfont.svg#jubilatregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{ 
+    font-family: Code;
+    src: url(../fonts/code/Code_Pro_Demo-webfont.eot);
+    src: url(../fonts/code/Code_Pro_Demo-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/code/Code_Pro_Demo-webfont.woff2) format('woff2'),
+         url(../fonts/code/Code_Pro_Demo-webfont.woff) format('woff'),
+         url(../fonts/code/Code_Pro_Demo-webfont.ttf) format('truetype'),
+         url(../fonts/code/Code_Pro_Demo-webfont.svg#code_pro_demoregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: Jubilat, Garamond, Times, serif;
+    font-weight: 700;
+}
+
+nav ul {
+    font-family: Code;
+    letter-spacing: 0.05em;
+}
+
+.topnav {
+    font-size: 14px;
+}
+
+.intro-header {
+    position: relative;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background: url(../images/Idea_Labs_Demo_day-79.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 5%;
+    /*padding-bottom: 2.5%;*/
+    font-weight: 100;
+    background-color: #662D91;
+    -webkit-filter: opacity(85%);
+    -moz-filter : opacity(50%);
+}
+
+.opaque-header {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    color: white;
+    padding: 2.5%;
+  
+}
+
+
+.intro-message > h1,p {
+    margin: 0;
+    font-size: 5em;
+    -webkit-filter: opacity(100%);
+    -moz-filter : opacity(100%);
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 0;
+    background-color: #f2f1f3;
+}
+
+@media screen and (min-width: 863px){
+    .half-col {
+        width: 50%;   
+    }
+
+    .f-half-col {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+.content-section-b {
+    color: #75429c;
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    font-family: Arcon;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.dd-section-heading {
+    font-family: Arcon;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: #662D91;
+    margin-bottom: 0;
+}
+
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social{
+    text-align: center;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.companies {
+    font-family: Code;
+    font-size: 10px;
+    text-align: center;
+    background-color: #75429c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.companies h4 {
+    color: white;
+    letter-spacing: 0.075em;
+}
+
+.companies p{
+    color: white;
+    font-weight: 500;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 767px){
+
+}
+
+footer {
+    background-color: #3a3141;
+    color: #b2b2b2;
+    font-family: Code;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+}
+
+footer p{
+    font-family: Arcon;
+    line-height: 200%;
+    letter-spacing: 0.02em;
+}
+
+footer a{
+    color: #b2b2b2;
+}
+
+footer a:hover{
+    color: white;
+}
+
+.footer-element-left{
+    padding: 50px 25px 0px 25px;
+    border-right: 1px solid white;
+    height: 100%;
+    min-height: 250px;
+}
+
+.footer-element-middle-left{
+    padding: 50px 25px 40px 25px;
+    border-right: 1px solid white;
+    min-height: 250px;
+}
+
+.footer-element-middle-right{
+    padding: 50px 25px 40px 25px;
+    border-right: 1px solid white;
+    min-height: 250px;
+}
+
+.footer-element-right{
+    padding: 50px 25px 40px 25px;
+    min-height: 250px;
+}
+
+.highlighted{
+    color: #9958cb;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+p {
+    font-family: Jubilat, Garamond;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+.logo-container {
+    overflow: auto;
+}
+
+.logo-left{
+    float: left;
+    width: 160px;
+    height: 45px;
+    background-image: url(../images/logo-IL.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px 5px 0 5px;
+}
+
+.logo-center{
+    height: 82px;
+    width: 300px;
+    background-image: url(../images/logo-IL.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+}
+
+.bar{
+    height: 25px;
+    background-color: #3d1b57;
+    padding: 2px;
+}
+
+.bar > p{
+    font-family: Arcon;
+}
+
+.bar > p > a{
+    font-family: Arcon;
+    color: white;
+}
+
+.bar > p > a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width : 667px){
+    .bar {
+        height: 70px;
+    }
+}
+
+.top-banner{
+    color: white;
+}
+
+.navbar {
+    border-bottom: 3px solid #662D91;
+    margin-bottom: 0px;
+}
+
+.custom-dropdown{
+    padding-top: 29px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+a:hover{
+    color: #662D91;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: #662D91;
+}
+
+.navbar-default .navbar-nav>li>div>a{
+    color: #662D91;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #662D91;
+    font-weight: 900; 
+}
+
+.navbar-default .navbar-nav>li>div>a:hover{
+    color: #662D91;
+    font-weight: 900; 
+}
+
+.selected{
+    font-weight: 900;
+}
+
+.navbar-nav>li>a{
+    padding-top: 25px;
+}
+
+.nav-primary{
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+ .carousel,
+.item,
+.active {
+    height: 550px;
+    position: relative;
+}
+
+.carousel {
+/*    padding-top: 50px;
+*/}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-control.left:hover .carousel-control.right:hover .carousel-control.left .carousel-control.right {
+    background-image: none;
+    -webkit-filter:none;
+    -moz-filter:none;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter: brightness(70%);
+    -moz-filter : brightness(70%);
+}
+
+.arrow-down{
+    margin: auto;
+    width: 100px;
+    height: 50px;
+    background-image:url(../images/down-arrow.png);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.selector{
+    font-family: Code;
+    letter-spacing: 0.05em;
+    color: #662D91;
+}
+
+.selector-lg{
+    font-size: 20px;
+    font-family: Code;
+    letter-spacing: 0.1em;
+    color: #662D91;
+}
+
+.selector-white{
+    font-family: Code;
+    letter-spacing: 0.07em;
+    color: white;
+    font-size: 13px;
+}
+
+.logos{
+    list-style: none;
+    display: inline-block;
+    height: auto;
+    padding:40px;
+    left:0;
+}
+
+.map-section {
+    font-family: Code;
+    font-size: 10px;
+    text-align: center;
+    background-color: #f2f1f3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.map-section h3 {
+    letter-spacing: 0.075em;
+}
+
+.map-section p{
+    font-weight: 500;
+}
+
+.map {
+    text-align: center;
+    width: 80%;
+}
+.inc-line-height {
+    line-height: 200%;
+}
+
+.logos > li {
+    display: inline-block;
+    margin:0 60px;
+}
+
+.bb-60 {
+    margin-bottom: 60px;
+}
+
+.bb-30 {
+    margin-bottom: 30px;
+}
+
+.bb-15 {
+    margin-bottom: 15px;
+}
+
+.tb-30 {
+    margin-top: 30px;
+}
+
+.right-border {
+    border-right: 1px solid #d8d8d8;
+}
+
+.bottom-border{
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.padding-30{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.padding-30-top{
+    padding-top: 30px;
+}
+
+.padding-10-all{
+    padding: 10px;
+}
+
+.vertical-divider {
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    border-right: 1px solid #d8d8d8;
+}
+
+.demo-day-image{
+    text-align: center;
+    width: 100%;
+}
+
+/*.highlight {
+    font-family: Arcon;
+    letter-spacing: 0.07em;
+    line-height: 150%;
+    background-color: #662D91;
+    color: white;
+    margin: auto;
+    width: 40%;
+    text-decoration: none;
+}*/
+
+.carousel-caption {
+    font-family: Arcon;
+    letter-spacing: 0.07em;
+    position: absolute;
+    top: 40%;
+    /*position: relative;*/
+    margin: auto;
+    width: 65%;
+}
+.carousel-caption > h2{
+    font-size: 33px;
+}
+
+.padding-top-100{
+    padding-top: 100px;
+}
+
+.nav-space{
+    height:70px;
+}
+
+.mission-statement {
+    color: white;
+    font-family: Code;
+    font-size: 10px;
+    text-align: center;
+    background-color: #3d1b57;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mission-statement h4 {
+    font-family: Arcon;
+    letter-spacing: 0.075em;
+}
+
+.mission-center{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.mission-statement p{
+    font-weight: 500;
+}
+
+@media(max-width: 1200px) { 
+
+}
+
+.focus{
+    font-family: Jubilat, Garamond;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+.leadership{
+    font-family: Code;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.stl-leadership{
+    font-family: Code;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.profile{
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.profile > h4{
+    font-family: Arcon;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.profile > p{
+    font-family: Arcon;
+    font-size: 15px;
+}
+
+.img-size{
+    width: 175px;
+    height: 175px;
+}
+
+.img-sponsor{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: rgba(102,45,145, 0.2);
+}
+.narrow{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+.infographics{
+    text-align: center;
+    background-color: #d5c6e1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.infographics >div >div>div > p{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    font-family: Arcon;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.info-header{
+    font-size: 50px;
+    font-family: Arcon;
+    color: #662D91;
+    letter-spacing: 0.1em;
+}
+
+.info-text{
+    font-family: Code;
+    font-size: 16px;
+    font-weight: 700;
+    color: #662D91;
+    letter-spacing: 0.1em
+}
+
+.img-fade{
+    filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+    -moz-filter: opacity(50%);
+}
+
+.img-fade:hover{
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+    -moz-filter: opacity(100%);
+}
+
+.ul-purple{
+    padding: 5px;
+    border-bottom: solid #662D91;
+}
+
+.border-white{
+    height: 100vh;
+    padding: 15px;
+    border: solid white;
+}
+
+.publications{
+    text-align: center;
+    background-color: #d5c6e1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.dd-heading{
+    margin-top: 0;
+}
+
+.demo-header {
+    position: relative;
+    padding-top: 60px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 15px;
+    background: url(../images/Idea_Labs_Demo_day-103-faded.jpg) no-repeat center center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.demo-info{
+    background-color: #f2f1f3;
+    padding: 40px 10px;
+}
+
+.right-panel{
+    background-color: rgba(61,27,87, 0.9);
+    height: 30vh;
+    color: white;
+    font-family: Arcon;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+}
+
+.header-font{
+    font-size: 70px;
+    font-family: Arcon;
+    color: #3d1b57;
+}
+
+.header-font-sm{
+    font-size: 40px;
+    font-family: Arcon;
+}
+
+.arcon-font{
+    font-family: Arcon;
+}
+
+.arcon-font-sm{
+    font-family: Arcon;
+    font-size: 17px;
+}
+
+.demoday-fixed{
+    margin-top: 45px; 
+}
+
+.speaker-content{
+    background-color: #d5c6e1;
+    padding-top: 50px;
+}
+
+.table>thead>tr>th{
+    border-bottom: 2px solid #662D91;
+}
+
+.demo-title{
+    padding: 15vh 0;
+    background-color: rgba(61,27,87, 0.4);
+}
+
+.demo-call{
+    padding: 5vh 30px;
+}
+
+.color-purple{
+    color: #3d1b57;
+}
+.staggered{
+    line-height: 200%;
+    padding: 0;
+}
+
+.grow{
+    transition: all .2s ease-out;
+}
+
+.grow:hover
+{
+    cursor: pointer;
+    transition: all .2s ease-in;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.johnson{
+    width:30%;
+}
+
+.logo-text{
+    font-size: 10px;
+    color: grey;
+    font-family: Code;
+}
