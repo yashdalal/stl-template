@@ -585,6 +585,7 @@ a:hover{
 }
 .carousel-caption > h2{
     font-size: 33px;
+    text-shadow: 1px 1px gray;
 }
 
 .padding-top-100{
